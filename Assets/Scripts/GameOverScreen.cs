@@ -24,9 +24,7 @@ public class GameOverScreen : MonoBehaviour
 
     public void ExitButton()
     {
-        //SceneManager.LoadScene("MainMenu");
-        //EnemyKilledGO.text = "Clicked";
-        Debug.Log("jkhkjhkhkk");
+        
         UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
 

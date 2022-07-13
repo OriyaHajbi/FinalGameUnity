@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CrossHairChange : MonoBehaviour
 {
+    public GameObject morter;
     public GameObject aCamera;
     public GameObject SeeThroughCrossHair;
     public GameObject TouchCrossHair;
@@ -58,6 +59,7 @@ public class CrossHairChange : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.G))
                     {
                         PickGun.singelton.changeWeapons();
+                        morter.SetActive(true);
                     }
                 }
 

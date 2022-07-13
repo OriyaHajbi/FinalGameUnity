@@ -14,7 +14,7 @@ public class ChestMotion : MonoBehaviour
     public Text ChestText;
     public Text TakeKeyText;
     private bool chestIsOpen = true;
-    private bool keyTaked = false;
+    public static bool keyTaked = false;
     private Animator animator;
     // Start is called before the first frame update
     void Start()

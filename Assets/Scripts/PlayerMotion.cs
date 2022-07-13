@@ -6,7 +6,7 @@ public class PlayerMotion : MonoBehaviour
 {
     private CharacterController controller;
     private float speed = 30;
-    private float angularSpeed = 50;
+    private float angularSpeed = 15;
     private float rotationAboutY = 0;
     private float rotationAboutX = 0;
     public GameObject aCamera; // [public] must be connected to external object

@@ -23,7 +23,8 @@ public class EnemyMotion : MonoBehaviour
 
     private bool modeAttack;
 
-    
+
+    public GameObject gunInTable;
 
 
 
@@ -46,7 +47,7 @@ public class EnemyMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) || !gunInTable.active)
         {
             agent.enabled = true;
             modeAttack = true;

@@ -34,7 +34,9 @@ public class Shooting : MonoBehaviour
     public float impactForce = 30f;
 
     public GameObject box;
-    
+    public GameObject soldiersWithMorter;
+
+    public Text goFindKeyText;
 
     // Start is called before the first frame update
     void Start()
@@ -111,12 +113,22 @@ public class Shooting : MonoBehaviour
                         Destructible.singelton.destroyIt();
                     }
 
+                    if (hit.transform.gameObject == soldiersWithMorter.transform.gameObject)
+                    {
+                        KillSoldierMorter.singelton.replaceIt();
+                    }
+
                   
 
                     
 
                 }
             }
+        }
+
+        if (enemyKilled == 2)
+        {
+            goFindKeyText.gameObject.SetActive(true);
         }
         
     }
